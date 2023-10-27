@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>Moja web stranica</title>
+    <!-- <style>
+        h1 {
+            color: red;
+        }
+    </style> -->
 </head>
 <body>
     <h1>Naslov 1</h1>
@@ -13,7 +19,7 @@
     <h5>Naslov 5</h5>
     <h6>Naslov 6</h6>
     <!-- Ovdje krece paragraf -->
-    <p>Ovo je neki paragraf
+    <p class="paragraf1">Ovo je neki paragraf
         ovo je prvi red
         ovo je drugi red
         ovo je treći red
@@ -80,5 +86,129 @@
     <li>zadaća</li>
     <li>zadaća</li>
 </ol>
+<h3>Tablice u HTML-u</h3>
+<table border="1">
+    <tr>
+        <td>1.red, ćelija 1</td>
+        <td>1.red, ćelija 2</td>
+    </tr>
+    <tr>
+        <td>2.red, ćelija 1</td>
+        <td>2.red, ćelija 2</td>
+    </tr>
+    <tr>
+        <td>3.red, ćelija 1</td>
+        <td>3.red, ćelija 2</td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <caption>Tablica 1</caption>
+    <tr>
+        <th>1.red, ćelija 1</th>
+        <th>1.red, ćelija 2</th>
+    </tr>
+    <tr>
+        <td>2.red, ćelija 1</td>
+        <td>2.red, ćelija 2</td>
+    </tr>
+    <tr>
+        <td>3.red, ćelija 1</td>
+        <td>3.red, ćelija 2</td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <tr>
+        <th colspan="3">1. red, ćelija 1, 2 i 3</th>
+    </tr>
+    <tr>
+        <td>2. red, ćelija 1</td>
+        <td>2. red, ćelija 2</td>
+        <td>2. red, ćelija 3</td>
+    </tr>
+    <tr>
+        <td>3. red, ćelija 1</td>
+        <td colspan="2">3. red, ćelija 2 i 3 </td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<table border="1">
+    <tr>
+        <th rowspan="3">1. red, ćelija 1</th>
+        <th>1. red, ćelija 2</th>
+        <th>1. red, ćelija 3</th>
+    </tr>
+    <tr>
+        <td rowspan="2">2. red, ćelija 2</td>
+        <td>2. red , ćelija 3</td>
+    </tr>
+    <tr>
+        <td>3. red, ćelija 3</td>
+    </tr>
+</table>
+
+<br>
+<hr>
+<br>
+
+<h3>Forme (obrasci) u HTML-u</h3>
+
+<form name="obrazac1" method="post" autocomplete="off"
+action="link1.html">
+    <p>
+        <label for="ime">Ime i prezime:</label>
+        <input  id="ime" type="text" size="15" maxlength="15" placeholder="Unesi ime.." required>
+        <br>
+        <br>
+        <label for="mail">Email adresa:</label>
+        <input type="email" name="email" id="mail" size="15">
+        <br><br>
+        <label for="pass">Vaša lozinka</label>
+        <input type="password" name="password" id="pass" required>
+        <br><br>
+        <label for="mob">Unesi broj mobitela:</label>
+        <input type="tel" name="mobitel" id="mob" pattern="\d{1,5}" maxlength="10">
+        <br><br>
+        <label for="broj">Unesi brojeve: </label>
+        <input type="number" name="brojevi" id="broj">
+        <br><br>
+        <label for="color">Unesi boju: </label>
+        <input type="color" name="boje" id="color">
+        <br><br>
+        <p>Izaberi programski jezik:</p>
+        <input type="radio" name="language" id="html" value="HTML">
+        <label for="html">HTML</label>
+        <br>
+        <input type="radio" name="language" id="css" value="css">
+        <label for="css">CSS</label>
+        <br>
+        <input type="radio" name="language" id="js" value="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+        <input type="submit" value="Pošalji">
+        <input type="reset" value="Poništi">
+    </p>
+</form>
+<br>
+<h3>Ugradnja video zapisa</h3>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/THrA3NOznl8?si=4bbhcEAQimp2kzsF" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen></iframe>
+
 </body>
 </html>
